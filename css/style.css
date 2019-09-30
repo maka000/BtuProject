@@ -15,6 +15,9 @@ a{
 .white{
     color: #fff;
 }
+.grey{
+    color: #777777;
+}
 .w_100{
     width: 100%;
 }
@@ -26,6 +29,9 @@ a{
 }
 .w_40{
     width: 40%;
+}
+.w_30{
+    width: 30%;
 }
 .w_25{
     width: 25%;
@@ -75,6 +81,9 @@ a{
 .pt_30{
     padding-top: 30px;
 }
+.p_20{
+    padding: 20px;
+}
 .over_hidden{
     overflow: hidden;
 }
@@ -103,12 +112,62 @@ ul li a:hover{
 }
 
 
+.image{
+    position: relative;
+    
+}
 
 
-.image:hover{
-    background:linear-gradient(90deg,#ff2f8b 0%,#9035f9 100%);
+.popular-places-text {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+    max-width: 330px;
+    padding: 0 10px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    z-index: 11;
+    color: #fff;
+}
+.image:hover .popular-places-text {
+    bottom: 80px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.image::before{
+     content: "";
+     width: 100%;
+     height: 0%;
+     left: 0;
+     position: absolute;
+     background:linear-gradient(90deg,#ff2f8b 0%,#9035f9 100%);
+     opacity: 0.7;
      z-index: 10;
-  
+     transition: all 300ms ease-in-out ;
+     -webkit-transition: all 300ms ease-in-out ;
+     -moz-transition: all 300ms ease-in-out ;
+     -ms-transition: all 300ms ease-in-out ;
+     -o-transition: all 300ms ease-in-out ;
+}
+
+.image:hover::before{
+    height: 100%;
+    bottom: 0%;
+    display: block;
 }
 
 
@@ -120,3 +179,26 @@ ul li a:hover{
     width: 100%;
     height: 100%;
 }
+
+
+.p_20{
+    padding: 20px;
+}
+.card:hover{
+    animation: card-shadow 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: card-shadow 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+    @keyframes card-shadow {
+        0% {
+          transform: translateZ(0);
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        }
+        100% {
+          transform: translateZ(50px);
+          box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        }
+      }
+  
+
