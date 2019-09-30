@@ -381,14 +381,9 @@ ul li a:hover{
 .active{
     color: #ff2f8b;
 }
-
-
 .image{
-    position: relative;
-    
+    position: relative;   
 }
-
-
 .popular-places-text {
     position: absolute;
     left: 50%;
@@ -416,9 +411,6 @@ ul li a:hover{
     opacity: 1;
     visibility: visible;
 }
-
-
-
 .image::before{
      content: "";
      width: 100%;
@@ -434,15 +426,11 @@ ul li a:hover{
      -ms-transition: all 300ms ease-in-out ;
      -o-transition: all 300ms ease-in-out ;
 }
-
 .image:hover::before{
     height: 100%;
     bottom: 0%;
     display: block;
 }
-
-
-
 .card_image{
     height: 200px;
 }
@@ -450,8 +438,6 @@ ul li a:hover{
     width: 100%;
     height: 100%;
 }
-
-
 .p_20{
     padding: 20px;
 }
@@ -459,9 +445,7 @@ ul li a:hover{
     animation: card-shadow 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     -webkit-animation: card-shadow 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-
-
-    @keyframes card-shadow {
+@keyframes card-shadow {
         0% {
           transform: translateZ(0);
           box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -472,4 +456,3 @@ ul li a:hover{
         }
       }
   
-
