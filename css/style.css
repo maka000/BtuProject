@@ -513,7 +513,7 @@ ul li a:hover{
     display: table;
     clear: both;
   }
-footer{
+.footer_fix{
      position: fixed;
     bottom: 0;
 }
