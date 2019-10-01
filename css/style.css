@@ -492,11 +492,10 @@ ul li a:hover{
   }
   
   /* Style the container/contact section */
-  .container {
-    border-radius: 5px;
- width: 70%;
- margin: 0 auto;
-           padding: 10px;
+  .container{
+          width: 70%;
+           margin: 0 auto;
+
   }
   
   /* Create two columns that float next to eachother */
